@@ -16,7 +16,10 @@
   </head>
   <body>
 
-   <header id = "header">
+  <div class="off-canvas-content" data-off-canvas-content>
+      <!-- Your page content lives here -->   
+
+   <header id = "header" style="position: fixed; width: 100%; z-index: 100;">
      <div class = "grid-container">
        <div class ="grid-x align-middle">
           <div class = "cell small-6 small-offset-3 medium-offset-0 medium-3 small-order-2 medium-order-1">
@@ -28,6 +31,12 @@
               <strong>
                 partida de poker
               </strong> </h2>
+          </div>
+
+          <div class="cell small-1 show-for-small-only small-order-3 small-offset-9">
+            <button type="button" data-toggle ="offCanvas">
+              <i class="fi-list"></i>
+            </button>
           </div>
           <div class="cell small-6 medium-3 small-order-1 medium-order-2 medium-offset-6 "> 
             <ul class="menu show-for-medium align-middle ">                         
@@ -46,6 +55,7 @@
                 </div>
               </li>
             </ul>
+            
           </div>
         </div>
      </div>      
@@ -55,7 +65,8 @@
    <!-- carrusel e imágenes inicio -->
 
    <main id = "main">
-     <div class="grid-container">
+    <br/><br/> <br/><br/> <br/><br/>
+     <div class="grid-container" >
        <div class="grid-y grid-margin-y" style="max-height: 900px;">
          <div class="cell">
 
@@ -146,7 +157,7 @@
         <div class="grid-x grid-padding-x align-middle">
          
           <div class="cell small-12 medium-6 ">
-            <h1 class="titulos-negros" >!A jugar¡</h1>
+            <h1 class="titulos-negros" id="aJugar" >!A jugar¡</h1>
             <p class="corriente">Saber el valor de las cartas nos ayudará a realizar apuestas correctas e inclusa a ganarlas. <br/>  <br/>
 
               En el póquer las cartas tienen el mismo valor que el número que representan y empezando desde el as, la escala sería: as, K, Q, diez, nueve, ocho, siete, seis, cinco, cuatro, tres y dos.</p>
@@ -209,7 +220,7 @@
               </div>
             </div>
           </div>
-          <div class="cell small-12">
+          <div class="cell small-12" id="comoSeSiGane">
             <h1 class="titulos-negros">
               ¿Cómo saber si gané?
             </h1>
@@ -353,7 +364,7 @@
           <div>
             <div class="cell header-mision small-12" style="background-color: black;"> <h3>Además de estas combinaciones, existe también una jerarquía de los colores que va, de mayor a menor: corazones, diamantes, tréboles y picas.</h3></div>
           </div>
-          <div class="cell small-12">
+          <div class="cell small-12" id="empates">
             <h1 class="titulos-negros">
               ¿Y si hay dos pares… o dos escaleras reales?
             </h1>
@@ -509,7 +520,7 @@
               </div>
             </div>
           </div>
-          <div class="cell small-12" style="margin-top: 40px;">
+          <div class="cell small-12" style="margin-top: 40px;" id="yComoSeJuega">
             <h1 class="titulos-negros">
               ¿Y cómo jugamos?
             </h1>
@@ -662,7 +673,7 @@
                <strong>
                  partida de poker
                </strong> </h1>
-           </div>            
+           </div>             
            <p class="corriente">Toda la información fué tomada del libro Juegos de naipes y de mesa, de Bárbara Reinlein, de Editorial LIBSA, publicado el año 2002. <br/> <br/>
               Página diseñada como excusa para hacer el curso de Foundation de Platzi 2020 
             </p>
@@ -675,6 +686,18 @@
    
     
   </footer>
+</div>
+<div class="off-canvas position-right" id="offCanvas" data-off-canvas>
+  <ul class="vertical menu" data-smooth-scroll >
+    <li> <a href="#header">Inicio</a></li>
+    <li> <a href="#aJugar">!A jugar!</a></li>
+    <li> <a href="#comoSeSiGane">¿Cómo se si gané?</a></li>
+    <li> <a href="#empates">¿Y si hay dos pares, dos pokers... o dos escaleras reales?</a></li>
+    <li> <a href="#yComoSeJuega" >¿Y cómo jugamos?</a></li>
+   
+  </ul>
+  
+</div>
 
 
 
