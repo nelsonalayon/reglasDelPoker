@@ -163,8 +163,13 @@ template {
 
 /* mis estilos inicio */
 
-header {
+header, footer {
   background-color: #d90429;
+}
+
+footer {
+  color: white;
+  text-align: center;
 }
 
 small, strong {
